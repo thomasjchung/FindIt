@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useContext } from "react";
+import { Heading } from "./components/Top/Heading";
+import { GameScreen } from "./components/Middle/GameScreen";
+import Scoreboard from "./components/Bottom/Scoreboard";
+import WebContext from "./components/Web-Context";
 
-function App() {
+const App: React.FC = () => {
+  const player1Name = "Thomas";
+  const player2Name = "Farhan";
+
+  const webCtx = useContext(WebContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading />
+      <GameScreen screenHeight={500} />
+      <Scoreboard player1Name={player1Name} player2Name={player2Name} />
     </div>
   );
-}
+};
 
 export default App;
