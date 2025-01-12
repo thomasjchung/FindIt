@@ -6,4 +6,4 @@ Stuck at home and bored? Play this fun online game with your friend from the com
 
 Utilizing *YOLO, WebRTC, Firebase, and more*, FindIt allows you to play a fun game inspired by popular Twitch streams whenever you want!
 
-Hope you enjoy and watch the video for a demo!
+Hope you enjoy!
